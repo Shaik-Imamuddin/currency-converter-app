@@ -40,7 +40,6 @@ function App() {
     fetchCurrencies();
   }, []);
 
-  // ✅ Clear result whenever dropdown or amount changes
   useEffect(() => {
     setResult(null);
   }, [from, to, amount]);
